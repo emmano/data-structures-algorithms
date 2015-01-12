@@ -76,7 +76,7 @@ public class Stack<T> {
      * mean that these two variables are tied when it comes to changing where one of them points to.
      * They will, though, see changes made to the memory location they are both attached to as we will see next
      *
-     * With all that said, here is time for the curve ball. If we were to do newNode.next.object = "test" after we do
+     * With all that said, is time for a curve ball. If we were to do newNode.next.object = "test" after we do
      * newNode.next = head and before head = newNode, head will see this change. This means that head.object will be "test"
      * instead of the original null. Please note that this is not the same as changing where either head or newNode.next
      * are pointing to, in fact at this point they both point to memory location 0x0. This is the reason why head will

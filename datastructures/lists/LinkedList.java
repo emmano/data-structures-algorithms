@@ -126,13 +126,17 @@ public class LinkedList<T> {
     }
 
     private static class Node<T> {
-        public Node<T> next;
-        public T object;
+        private Node<T> next;
+        private T object;
 
         public void recursive() {
             System.out.println(object.toString());
             if (next != null)
                 next.recursive();
+        }
+
+        public T getObject(){
+            return object;
         }
     }
 
